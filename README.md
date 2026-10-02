@@ -75,34 +75,45 @@ V2 Results
 
 
 
-Sample Prediction
+## Sample Prediction
 
 The trained V2 model was tested on a road image.
 
-Predicted Condition: Crack
+**Predicted Condition:** Crack
 
-Confidence: 76.60%
+**Confidence:** 76.60%
 
-Class Probabilities
-Class	Probability
-Crack	76.60%
-Pothole	11.99%
-Surface Erosion	11.41%
-Input Image
+### Class Probabilities
 
-Grad-CAM Explainability
+| Class | Probability |
+|---|---:|
+| Crack | 76.60% |
+| Pothole | 11.99% |
+| Surface Erosion | 11.41% |
+
+### Input Image
+
+![Road Test Image](test_images/road_test.jpg)
+
+---
+
+## Grad-CAM Explainability
 
 Grad-CAM was implemented to visualize the regions of the image that contributed to the model's prediction.
 
+![Grad-CAM Result](results/gradcam_road_test.png)
+
 The Grad-CAM output provides a visual explanation alongside the model prediction.
 
-Technologies Used:
+---
 
-Python
-PyTorch
-Torchvision
-ResNet18
-NumPy
-Matplotlib
-Scikit-learn
-Pillow
+## Technologies Used
+
+- Python
+- PyTorch
+- Torchvision
+- ResNet18
+- NumPy
+- Matplotlib
+- Scikit-learn
+- Pillow
