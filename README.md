@@ -96,7 +96,8 @@ Grad-CAM was implemented to visualize the regions of the image that contributed 
 
 The Grad-CAM output provides a visual explanation alongside the model prediction.
 
-Technologies Used
+Technologies Used:
+
 Python
 PyTorch
 Torchvision
