@@ -1,0 +1,23 @@
+ROAD SURFACE CONDITION MODEL EVALUATION
+==================================================
+
+Test Accuracy: 70.13%
+
+Classification Report
+--------------------------------------------------
+                 precision    recall  f1-score   support
+
+          Crack     0.8667    0.5417    0.6667        72
+        Pothole     0.5696    0.7377    0.6429        61
+Surface Erosion     0.7290    0.7959    0.7610        98
+
+       accuracy                         0.7013       231
+      macro avg     0.7218    0.6918    0.6902       231
+   weighted avg     0.7298    0.7013    0.7004       231
+
+
+Confusion Matrix
+--------------------------------------------------
+[[39 19 14]
+ [ 1 45 15]
+ [ 5 15 78]]
