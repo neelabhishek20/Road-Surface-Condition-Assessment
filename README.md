@@ -46,49 +46,34 @@ The original dataset was kept unchanged.
 
 ---
 
-## Methodology
+## Model Development
 
-```text
-Road Image
-     ↓
-Image Preprocessing
-     ↓
-Data Augmentation
-     ↓
-ResNet18
-     ↓
-Transfer Learning
-     ↓
-Fine-Tuning
-     ↓
-Road Condition Classification
-     ↓
-Confidence Score
-     ↓
-Grad-CAM Explainability
-Model Development
-V1 - Baseline Model
+### V1 - Baseline Model
 
 A pretrained ResNet18 model was used as the baseline. The backbone was initially frozen and the final classification layer was trained for the three road-condition classes.
 
-V1 Test Accuracy: 70.13%
+**V1 Test Accuracy: 70.13%**
 
-V2 - Fine-Tuned Model
+### V2 - Fine-Tuned Model
 
-For V2, the deeper layer4 of ResNet18 and the final fully connected classification layer were fine-tuned for the road damage dataset.
+For V2, the deeper `layer4` of ResNet18 and the final fully connected classification layer were fine-tuned for the road damage dataset.
 
-V2 Test Accuracy: 85.71%
+**V2 Test Accuracy: 85.71%**
 
 V1 vs V2
-Metric	V1	V2
-Test Accuracy	70.13%	85.71%
-Macro F1 Score	0.6902	0.8561
+| Metric         |     V1 |         V2 |
+| -------------- | -----: | ---------: |
+| Test Accuracy  | 70.13% | **85.71%** |
+| Macro F1 Score | 0.6902 | **0.8561** |
+
 V2 Results
-Class	Precision	Recall	F1-Score
-Crack	0.9130	0.8750	0.8936
-Pothole	0.8868	0.7705	0.8246
-Surface Erosion	0.8073	0.8980	0.8502
-Confusion Matrix
+| Class           | Precision | Recall | F1-Score |
+| --------------- | --------: | -----: | -------: |
+| Crack           |    0.9130 | 0.8750 |   0.8936 |
+| Pothole         |    0.8868 | 0.7705 |   0.8246 |
+| Surface Erosion |    0.8073 | 0.8980 |   0.8502 |
+
+
 
 Sample Prediction
 
